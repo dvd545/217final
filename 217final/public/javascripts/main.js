@@ -1,4 +1,4 @@
-// Constructor Patter #4
+// Constructor Patter #5
 
 //Constructor Pattern
 //Good for creating multiple objects off of this.
