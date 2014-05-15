@@ -1,0 +1,16 @@
+#inputDisplay {
+    width: 255px;
+    height: 40px;
+    padding: 5px 10px; 
+    font-size: 155%;
+    
+}
+
+button {
+    width: 70px;
+    height: 50px; 
+}
+
+button.btnLarge {
+    width: 140px; 
+}

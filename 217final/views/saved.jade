@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  h2#hHeading Saved Systems:
+  a(id='aNew' class='link' href='/') New Config
+  br
+  br
+  div#divSavedList
+    table(class='tableSaved')
+      thead
+        tr
+          th Config Id.
+          th Screen Size
+          th Memory
+          th Hard Drive
+          th Total
+      tbody
+      each result, i in results
+        tr
+          td #{result._id}
+          td #{result.options.screen.description}
+          td #{result.options.memory.description}
+          td #{result.options.hdd.description}
+          td $#{result.total}

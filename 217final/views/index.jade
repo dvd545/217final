@@ -1,0 +1,56 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  h2#hHeading Configure Your Laptop:
+  
+  div#divSidebar
+    div(id='dSum')
+      h3#hSummaryHeading Order Details
+      hr
+      label(for='endPrice') $
+      input(id='endPrice' class='price' name='price' value='1000')
+      br
+      button(id='btnSave' type='button' name='save' value='save') Save
+      br
+      br
+      a(id='aSaved' class='link' href='/list') View Previous
+      
+  div#divConfiguration
+    div(id='divScreen' class='config')
+      p(class='pDescription') Screen Size Options
+      ul(id='ul-screen' class='list')
+        li(class='')
+          input(id='screen-opt11in' class='option' type='radio' name='screen' value='0' checked='checked')
+          span(id='screen-opt11in-description' class='option') 11" (Incl)
+        li(class='')
+          input(id='screen-opt15in' class='option' type='radio' name='screen' value='200')
+          span(id='screen-opt15in-description' class='description') 15" (+200)
+       
+    
+    div(id='divMemory' class='config')
+      p(class='pDescription') Ram Options
+      ul(id='ul-memory' class='list')
+        li(class='')
+          input(id='mem-opt8' class='option' type='radio' name='memory' value='0' checked='checked' )
+          span(id='mem-opt8-description' class='description') 8GB (Incl)
+        li(class='')
+          input(id='mem-opt16' class='option' type='radio' name='memory' value='200')
+          span(id='mem-opt16-description' class='description') 16GB (+200)
+    
+    div(id='divHdd' class='config')
+      p(class='pDescription') HD Options
+      ul(id='ul-hdd' class='list')
+        li(class='')
+          input(id='hdd-opt128' class='option' type='radio' name='hdd' value='0' checked='checked')
+          span(id='hdd-opt128-description' class='description') 128GB (Incl)
+        li(class='')
+          input(id='hdd-opt256' class='option' type='radio' name='hdd' value='200')
+          span(id='hdd-opt256-description' class='description') 256GB (+200)
+
+  h1#qunit-header QUnit Test
+  h2#qunit-bannder
+  div#qunit-testrunner-toolbar
+  h2#quit-userAgent
+  ol#qunit-tests
