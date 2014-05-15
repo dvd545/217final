@@ -23,4 +23,4 @@ test("Subtracting Items", function() {
     equal($('#endPrice').val(), $.store.myLaptop.endPrices(), "Price Lowered by 200");
 
 });
- 
+ //Unit Testing  #3
