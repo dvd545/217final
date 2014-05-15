@@ -1,3 +1,5 @@
+// Constructor Patter #4
+
 //Constructor Pattern
 //Good for creating multiple objects off of this.
 //Simply instanteasiate multiple uses of this laptop object
